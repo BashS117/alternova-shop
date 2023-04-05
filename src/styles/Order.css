@@ -1,0 +1,8 @@
+.info-item-container{
+    display: flex;
+    justify-content: space-between;
+}
+.my-order-total-container{
+display: flex;
+justify-content: space-between;
+}

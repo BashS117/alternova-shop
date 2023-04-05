@@ -1,0 +1,16 @@
+.item{
+    width: min-content;
+}
+.item img{
+    height: 225px;
+    object-fit: cover;
+    width: 200px;
+}
+.section-add-to-cart{
+    display: flex;
+    justify-content: space-between;
+}
+.title-item{
+    margin: 0px;
+    font-size: 25px;
+}
