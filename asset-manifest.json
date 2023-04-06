@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/alternova-shop/static/css/main.f5f129dc.css",
+    "main.js": "/alternova-shop/static/js/main.60de012d.js",
+    "static/media/icon-cart.svg": "/alternova-shop/static/media/icon-cart.539ec608f50e707c94d583ec11acf99d.svg",
+    "index.html": "/alternova-shop/index.html",
+    "main.f5f129dc.css.map": "/alternova-shop/static/css/main.f5f129dc.css.map",
+    "main.60de012d.js.map": "/alternova-shop/static/js/main.60de012d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5f129dc.css",
+    "static/js/main.60de012d.js"
+  ]
+}
