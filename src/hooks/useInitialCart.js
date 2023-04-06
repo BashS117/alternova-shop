@@ -23,8 +23,6 @@ const useInitialState = () => {
             ...state,
             cart: [...state.cart, cartItemProduct],
         })
-        console.log(cartItemProduct);
-        console.log(state);
     }
 
 
