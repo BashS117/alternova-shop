@@ -1,6 +1,40 @@
 .shopping-cart-container{
     position: absolute;
-    top: 76px;
-    right: 180px;
+    top: 86px;
+    right: 140px;
     width: 500px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 18px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);}
+.shopping-cart-sections{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 24px;
+    border-bottom: 1px solid black;
+
+}
+.title{
+    border-bottom: 1px solid black;
+    margin: 0px;
+}
+.empty-cart{
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+}
+.my-order-total-container button{
+    background-color: rgba(244, 240, 240, 0.941);
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+    
+@media (max-width: 375px) {
+    .shopping-cart-container{
+        right: 14px;
+        width: 316px;
+    
+    }
+    
 }

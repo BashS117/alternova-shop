@@ -1,8 +1,25 @@
+.my-order-content{
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
 .info-item-container{
     display: flex;
     justify-content: space-between;
 }
 .my-order-total-container{
+    background-color:rgb(246, 96, 96);
+  padding: 10px;  
 display: flex;
 justify-content: space-between;
+border-radius: 10px;
 }
+.info-item-container p:nth-child(1){
+    width: 50px;
+}
+
+/* @media (max-width: 375px) {
+    .info-item-container p:nth-child(1){
+        width: 50px;
+    }
+    
+} */

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Order.css'
-function Order  ({cartItem: {name}})  {
+function Order  ({cartItem})  {
     return (
 
         <div className="my-order-content">
@@ -9,17 +9,23 @@ function Order  ({cartItem: {name}})  {
         <div className="order">
          
           <div className="info-item-container">
-            <p>{name}
+            <p>{cartItem.name}
             </p>
-              <p>X cantida</p>
-              <p></p>
-              <p>$precio total</p>
+              <p>X {cartItem.amount}</p>
+              <p>{cartItem.unit_price}</p>
+              <p>${cartItem.amount*cartItem.unit_price}</p>
           </div>
          
         </div>
       
       </div>
         
+
+        // "id": 1,
+        //     "name": "redbull",
+        //     "unit_price": 5000,
+        //     "stock": 5,
+        //     "image"
     );
 }
 

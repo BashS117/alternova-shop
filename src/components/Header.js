@@ -7,10 +7,13 @@ function Header ()  {
     const [toggle,setToggle]=useState(false);
 
     return (<nav className=''>
+        <div className='navbar-left navbar'>        
           <h1>ALTERNOVA-SHOP</h1>
+        </div>
 
-          <img onClick={()=>setToggle(!toggle)} className='imgCart' src ={cart} alt='shopingCart' />
-
+        <div className='navbar-rigth navbar'>
+            <img onClick={() => setToggle(!toggle)} className='imgCart' src={cart} alt='shopingCart' />
+        </div>
           {toggle && <ShoppingCart/>}
 
     </nav>

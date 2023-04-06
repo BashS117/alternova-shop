@@ -1,27 +1,33 @@
 import { useState } from "react";
 
-const initialState={
-    productscart:[]
+const initialState = {
+    cart: [],
 }
 
 
-const useInitialCart= ()=>{
-    const [state,setState]=useState(initialState);
+const useInitialState = () => {
+    const [state, setState] = useState(initialState);
 
 
-const addToCart = (product)=>{
-    // const cartItemProduct={
-    //     ...product,
-    // };
+    const addToCart = (product,amount) => {
+        const cartItemProduct = {
+            ...product,
+            amount:amount,
+            name:product.name,
+            unit_price:product.unit_price,
+            stock:product.stock,
+            image:product.image
+        };
 
-    setState({
-        ...state,
-        productscart:[...state.productscart, product],
-    })
-}
-    
+        setState({
+            ...state,
+            cart: [...state.cart, cartItemProduct],
+        })
+        console.log(cartItemProduct);
+        console.log(state);
+    }
 
-const [amount,setAmount]=useState(1);
+
     // const localStorageCart = localStorage.getItem('CART')
     // let parsedCart;
     // if(!localStorageCart){
@@ -35,14 +41,14 @@ const [amount,setAmount]=useState(1);
 
 
 
-    return{
+    return {
         state,
-        setState,
         addToCart,
+        
     }
-    
+
 };
 
 
 
-export default useInitialCart;
+export default useInitialState;
